@@ -1,14 +1,14 @@
 #include <stdio.h>
-char* comparar(int x, int y){
+void comparar(int x, int y){
     if(x > y)
-        return "mayor";
+      printf("%d es mayor que %d", x,y);
     if(x < y)
-        return "menor";
+        printf("%d es menor que %d", x,y);
     else
-        return "igual";
+        printf("%d es igual que %d", x,y);
 }
 int main(){
     int a, b;
     scanf("%d %d", &a, &b);
-    printf("%d es %s que %d", a, comparar(a,b), b);
+    comparar(a,b);
 }
